@@ -9,5 +9,3 @@ params:
 ---
 `r params$title`
 ---
-
-## `r params$param1`

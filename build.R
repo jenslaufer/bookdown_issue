@@ -3,11 +3,11 @@ library(glue)
 library(bookdown)
 
 
-parameterized_book_render <- function(.param1, .title) {
+parameterized_book_render <- function(.title, .param1) {
   outputdir <- "_book/PDF/{.title}/{.param1}" %>% glue()
   
   parameters <- list(title = .title,
-                     param1 = .param1, )
+                     param1 = .param1)
   
   bookdown::render_book("index.Rmd",
                         "bookdown::pdf_book",
