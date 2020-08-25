@@ -1,0 +1,13 @@
+---
+author: "Tim E. Wolf"
+params:
+  param1: "something"
+  title: "blubb"
+---
+
+
+---
+`r params$title`
+---
+
+## `r params$param1`
