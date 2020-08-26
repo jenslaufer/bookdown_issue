@@ -12,7 +12,8 @@ parameterized_book_render <- function(.title, .param1) {
   bookdown::render_book("index.Rmd",
                         "bookdown::pdf_book",
                         output_dir = outputdir,
-                        params = parameters)
+                        params = parameters,
+                        clean_envir = F)
 }
 
 data <-
